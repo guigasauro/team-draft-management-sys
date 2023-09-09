@@ -22,6 +22,7 @@ public class PlayerController {
     public List<Player> getAll(){
 
         List <Player> list = playerRepository.findAll();
+
         return list;
     }
 
