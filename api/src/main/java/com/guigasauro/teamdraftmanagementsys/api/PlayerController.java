@@ -51,7 +51,7 @@ public class PlayerController {
         );
 
         player.setId(details.getId());
-        player.setName(details.getName());
+        player.setPlayerName(details.getPlayerName());
         player.setAge(details.getAge());
         player.setRealTeam(details.getRealTeam());
         player.setOverall(details.getOverall());
@@ -59,6 +59,7 @@ public class PlayerController {
         player.setPosition2(details.getPosition2());
         player.setPosition3(details.getPosition3());
         player.setPosition4(details.getPosition4());
+        player.setTeamId(details.getTeamId());
 
         Player updated = playerRepository.save(player);
 

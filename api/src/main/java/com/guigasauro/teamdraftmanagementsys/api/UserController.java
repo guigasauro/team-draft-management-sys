@@ -55,9 +55,9 @@ public class UserController {
         );
 
         user.setId(details.getId());
-        user.setName(details.getName());
-        user.setUsername(details.getUsername());
-        user.setPassword(details.getPassword());
+        user.setUserName(details.getUserName());
+        user.setLogin(details.getLogin());
+        user.setUserPassword(details.getUserPassword());
 
         User updated = userRepository.save(user);
 
